@@ -1,0 +1,8 @@
+make sure npm install and npm test work
+set up travis job
+add node 0.4
+break the build under 0.4 using assert()
+fix the build
+add a badge
+
+
