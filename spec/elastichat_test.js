@@ -1,5 +1,6 @@
 var Stubble = require('stubble');
 var events = require('events');
+var assert = require('assert');
 
 var ircClient = new events.EventEmitter();
 ircClient.join = function(channel){
@@ -38,5 +39,6 @@ ircClient.emit("registered");
 ircClient.emit("join", "#foo");
 
 setTimeout(function(){
+  assert(true);
 
 }, 1000);
