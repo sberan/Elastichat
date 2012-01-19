@@ -1,0 +1,21 @@
+{
+  "author": "Sam Beran <sberan@gmail.com>",
+  "name": "elastichat",
+  "description": "Index IRC messages to ElasticSearch",
+  "version": "0.0.0",
+  "repository": {
+    "url": ""
+  },
+  "scripts": {
+    "test": "node spec/elastichat_test.js"
+  },
+  "engines": {
+    "node": "~0.6.7"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "stubble":"0.1.X"
+
+
+  }
+}

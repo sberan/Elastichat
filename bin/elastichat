@@ -1,0 +1,27 @@
+#!/usr/bin/env node
+
+var Elastichat = require("../lib/elastichat.js");
+
+//todo: this is unforgivable
+var args = process.argv.slice(2),
+ esHost = args.shift(),
+ esPort = args.shift(),
+ esIndex = args.shift(),
+ ircServer = args.shift(),
+ nick = args.shift(),
+ channels = args; 
+
+new Elastichat({
+  irc: {
+    nick: nick,
+    server: ircServer,
+    channels: channels
+  },
+  search: {
+    index: esIndex,
+    host: esHost,
+    port: esPort
+  }
+});
+
+
