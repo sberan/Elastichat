@@ -42,6 +42,7 @@ ircClient.emit("join", "#foo");
 ircClient.emit("message","s_b", "#foo", "yo!");
 
 setTimeout(function(){
+  assert(true);
   var channel = docs.shift();
   assert.equal(channel.id, "##javascript");
   channel = docs.shift();
